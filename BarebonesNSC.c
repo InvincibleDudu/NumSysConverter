@@ -1,5 +1,5 @@
 /*NumSysConverter
-(c)2018, Du Jiachen, USST*/
+(c)2018, Malcolm "Addition" Kenneth, aka InvincibleDudu, USST*/
 #include<stdio.h>
 #include<stdlib.h>
 #include<string.h>
@@ -185,7 +185,7 @@ void Register()
     tmp=(USER*)calloc(1,sizeof(USER));
     printf("Username:\n");
     scanf("%s",tmp->name);
-    fprintf(fp,"Username£º%s\n",tmp->name);
+    fprintf(fp,"UsernameÂ£Âº%s\n",tmp->name);
     while(now)
     {
         if(strcmp(tmp->name,now->name)==0)
@@ -197,7 +197,7 @@ void Register()
     }
     printf("Password:\n");
     scanf("%s",tmp->password);
-    fprintf(fp,"Password£º%s\n",tmp->password);
+    fprintf(fp,"PasswordÂ£Âº%s\n",tmp->password);
     printf("Success!\n\n");
     press();
     sleep(1);
@@ -226,12 +226,12 @@ void change_code()
                 scanf("%s",tmp->password);
                 tmp->next=head;
                 head=tmp;
-                printf("Success!¡\\n");
+                printf("Success!Â¡\\n");
                 return ;
             }
             now=now->next;
         }
-        printf("Verification Failed£¡\n");
+        printf("Verification FailedÂ£Â¡\n");
     }
     printf("To many tries, plz try agian later.\n");
 }
